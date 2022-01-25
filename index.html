@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" crossorigin="anonymous" integrity="" />
+  <title>simple to do app</title>
+</head>
+
+<body>
+  <main>
+    <section>
+      <!--centralising content-->
+      <div class="row justify-content-center mt-5">
+        <div class="col-sm-8 col-lg-4">
+          <div class="card">
+            <div class="card-header bg-primary text-white">
+              <div class="align-items-center justify-content-center mt-3">
+                <h2>To Do List <i class="bi bi-list-stars"></i></h2>
+                <p class="mute">Write out your tasks for the day</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <form onsubmit="newElement(event);" id="">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="input-group">
+                    <input 
+                      type="text"
+                      class="form-control"
+                      id="myInput"
+                      placeholder="Enter new task"
+                      aria-label="Enter new task"
+                      aria-describedby="basic-addon2"
+                    />
+                    <button type="submit" class="input-group-text">
+                      <span class="visually-hidden-focusable">Submit</span>
+                      <i class="bi bi-plus-square-fill"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+              <ul class="list-group mt-3" id="myList">
+                <!---to move icons to the opposite end-->
+               <li class="list-group-item d-none justify-content-between align-items-center">Task 6
+                  <span>
+                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                    <i class="bi bi-trash text-danger"></i>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <h6 class="mb-3 task number text-mute">
+                Hurray! you have completed your daily task
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </header>
+      <script src="/assets/js/test.js"></script>
+      <script src="/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
